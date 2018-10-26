@@ -74,8 +74,14 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BONUS_COCOA</Tag>
+		<English>Cocoa</English>
+		<German>Kakao</German>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BONUS_COFFEE</Tag>
 		<English>Coffee</English>
+<<<<<<< HEAD
 		<French>
 			<Text>Caf&#233;</Text>
 			<Gender>Male</Gender>
@@ -84,6 +90,9 @@
 		<German>Coffee</German>
 		<Italian>Coffee</Italian>
 		<Spanish>Coffee</Spanish>
+=======
+		<German>Kaffee</German>
+>>>>>>> map
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HIT_SINGLES</Tag>
@@ -146,6 +155,11 @@
 		<Spanish>Pearls</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BONUS_POTATO</Tag>
+		<English>Potatoes</English>
+		<German>Kartoffeln</German>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BONUS_TEA</Tag>
 		<English>Tea</English>
 		<French>
@@ -180,5 +194,45 @@
 		<German>Kamel</German>
 		<Italian>Camel</Italian>
 		<Spanish>Camel</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_OPIUM</Tag>
+		<English>Opium</English>
+		<German>Opium</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_RUBBER</Tag>
+		<English>Rubber</English>
+		<German>Kautschuk</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_SALT</Tag>
+		<English>Salt</English>
+		<German>Salz</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_JADE</Tag>
+		<English>Jade</English>
+		<German>Jade</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_OBSIDIAN</Tag>
+		<English>Obsidian</English>
+		<German>Obsidian</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_RARE_EARTHS</Tag>
+		<English>Rare Earths</English>
+		<German>Seltene Erden</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_AMBER</Tag>
+		<English>Amber</English>
+		<German>Bernstein</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_MILLET</Tag>
+		<English>Millet</English>
+		<German>Hirse</German>
 	</TEXT>
 </Civ4GameText>

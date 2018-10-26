@@ -1,7 +1,7 @@
 from Consts import *
 
 # Peak that change to hills during the game, like Bogota
-lPeakExceptions = [(31, 13), (32, 19), (27, 29), (88, 47), (40, 66)]
+lPeakExceptions = []
 
 def isReborn(iPlayer):
 	return gc.getPlayer(iPlayer).isReborn()
@@ -100,232 +100,233 @@ def init():
 ### Capitals ###
 
 tCapitals = (
-(69, 33), # Thebes
-(100, 44), # Chang'an
-(76, 40), # Babylon
-(87, 40), # Harappa
-(67, 41), # Athens
-(94, 40), # Pataliputra
-(73, 40), # Sur
-(4, 18), # Tonga
-(82, 38), # Persepolis
-(60, 44), # Rome
-(91, 30), # Thanjavur
-(72, 29), # Aksum
-(109, 46), # Seoul
-(22, 35), # Tikal
-(68, 45), # Constantinople
-(113, 45), # Kyoto
-(60, 59), # Oslo
-(88, 49), # Orduqent
-(75, 33), # Mecca
-(96, 43), # Lhasa
-(100, 26), # Palembang
-(51, 41), # Cordoba
-(52, 44), # Madrid
-(55, 50), # Paris
-(102, 33), # Angkor
-(53, 54), # London
-(59, 51), # Frankfurt
-(73, 54), # Moskow
-(51, 30), # Djenne
-(65, 51), # Krakow
-(49, 43), # Lisboa
-(28, 22), # Cuzco
-(59, 46), # Florence
-(99, 51), # Karakorum
-(18, 37), # Tenochtitlan
-(90, 40), # Delhi
-(70, 43), # Sogut
-(101, 33), # Ayutthaya
-(62, 20), # Mbanza Kongo
-(57, 53), # Amsterdam
-(62, 53), # Berlin
-(27, 46), # Washington
-(34, 11), # Buenos Aires
-(41, 18), # Rio de Janeiro
-(30, 52), # Montreal
+(0, 0), # Thebes
+(0, 0), # Chang'an
+(0, 0), # Babylon
+(0, 0), # Harappa
+(0, 0), # Athens
+(0, 0), # Pataliputra
+(0, 0), # Sur
+(0, 0), # Tonga
+(0, 0), # Persepolis
+(0, 0), # Rome
+(0, 0), # Thanjavur
+(0, 0), # Aksum
+(0, 0), # Seoul
+(0, 0), # Tikal
+(0, 0), # Constantinople
+(0, 0), # Kyoto
+(0, 0), # Oslo
+(0, 0), # Orduqent
+(0, 0), # Mecca
+(0, 0), # Lhasa
+(0, 0), # Palembang
+(0, 0), # Cordoba
+(0, 0), # Madrid
+(0, 0), # Paris
+(0, 0), # Angkor
+(0, 0), # London
+(0, 0), # Cologne
+(0, 0), # Moskow
+(0, 0), # Timbuktu
+(0, 0), # Krakow
+(0, 0), # Lisboa
+(0, 0), # Cuzco
+(0, 0), # Mailand
+(0, 0), # Karakorum
+(0, 0), # Tenochtitlan
+(0, 0), # Delhi
+(0, 0), # Sogut
+(0, 0), # Ayutthaya
+(0, 0), # Mbanza Kongo
+(0, 0), # Amsterdam
+(0, 0), # Berlin
+(0, 0), # Washington
+(0, 0), # Buenos Aires
+(0, 0), # Rio de Janeiro
+(0, 0), # Ottawa
 )
 
 dChangedCapitals = {
-iChina : (102, 47),	# Beijing
-iIndia : (90, 40),	# Delhi
-iCarthage : (58, 39),	# Carthage
-iPersia : (81, 41),	# Esfahan (Iran)
-iTamils : (90, 30),	# Vijayanagara
-iMaya : (27, 29),	# Bogota (Colombia)
-iKhmer : (101, 37),	# Hanoi
-iHolyRome : (62, 49),	# Vienna
+iChina : (0, 0),	# Beijing
+iIndia : (0, 0),	# Delhi
+iCarthage : (0, 0),	# Carthage
+iPersia : (0, 0),	# Esfahan (Iran)
+iTamils : (0, 0),	# Vijayanagara
+iMaya : (0, 0),	# Bogota (Colombia)
+iKhmer : (0, 0),	# Hanoi
+iHolyRome : (0, 0),	# Vienna
 }
 
 # new capital locations if changed during the game
 dNewCapitals = {
-iJapan : (116, 46),	# Tokyo
-iVikings : (63, 59),	# Stockholm
-iHolyRome : (62, 49),	# Vienna
-iItaly : (60, 44),	# Rome
-iMongolia : (102, 47),	# Khanbaliq
-iOttomans : (68, 45),	# Istanbul
+iJapan : (0, 0),	# Tokyo
+iVikings : (0, 0),	# Stockholm
+iHolyRome : (0, 0),	# Vienna
+iItaly : (0, 0),	# Rome
+iMongolia : (0, 0),	# Khanbaliq
+iOttomans : (0, 0),	# Istanbul
 }
 
 # new capital locations on respawn
 dRespawnCapitals = {
-iEgypt : (69, 35),	# Cairo
-iChina : (102, 47),	# Beijing
-iIndia : (90, 40),	# Delhi
-iPersia : (81, 41),	# Esfahan
-iEthiopia : (72, 28),	# Addis Ababa
-iJapan : (116, 46),	# Tokyo
-iVikings : (63, 59),	# Stockholm
-iTurks : (84, 41),	# Herat
-iIndonesia : (104, 25),	# Jakarta
-iMoors : (51, 37),	# Marrakesh
-iHolyRome : (62, 49),	# Vienna
-iInca : (26, 22),	# Lima
-iItaly : (60, 44),	# Rome
-iMughals : (85, 37),	# Karachi
-iOttomans : (68, 45),	# Istanbul
+iEgypt : (0, 0),	# Cairo
+iChina :  (0, 0),	# Beijing
+iIndia : (0, 0),	# Delhi
+iPersia : (0, 0),	# Esfahan
+iEthiopia : (0, 0),	# Addis Ababa
+iJapan : (0, 0),	# Tokyo
+iVikings : (0, 0),	# Stockholm
+iTurks: (0, 0), 	# Herat
+iIndonesia : (0, 0),	# Jakarta
+iMoors : (0, 0),	# Marrakesh
+iHolyRome : (0, 0),	# Vienna
+iInca : (0, 0),		# Lima
+iItaly : (0, 0),	# Rome
+iMughals : (0, 0),	# Karachi
+iOttomans : (0, 0),	# Istanbul
 }
 
 ### Birth Area ###
 
 tBirthArea = (
-((66, 30), 	(70, 36)), 	# Egypt
-((99, 43), 	(107, 47)), 	# China
-((75, 39), 	(77, 42)), 	# Babylonia
-((85, 37), 	(88, 41)), 	# Harappa
-((65, 39), 	(70, 45)), 	# Greece
-((87, 36), 	(96, 40)), 	# India
-((71, 39), 	(74, 41)), 	# Carthage
-((3, 17), 	(7, 22)), 	# Polynesia
-((79, 37), 	(85, 44)), 	# Persia
-((59, 41), 	(63, 47)), 	# Rome
-((90, 27), 	(93, 32)), 	# Tamils
-((69, 27), 	(73, 30)), 	# Ethiopia
-((107, 45), 	(110, 49)), 	# Korea
-((20, 35), 	(23, 37)), 	# Maya
-((64, 38), 	(74, 45)), 	# Byzantium
-((111, 41), 	(116, 49)), 	# Japan
-((58, 56), 	(64, 62)), 	# Vikings
-((79, 45),	(98, 52)),	# Turks
-((67, 30), 	(80, 40)), 	# Arabia
-((92, 41), 	(98, 45)), 	# Tibet
-((98, 24), 	(107, 31)), 	# Indonesia
-((51, 37), 	(58, 43)), 	# Moors
-((49, 43), 	(53, 46)), 	# Spain
-((51, 46), 	(57, 52)), 	# France
-((100, 32), 	(103, 36)), 	# Khmer
-((50, 53), 	(54, 60)), 	# England
-((58, 48), 	(64, 54)), 	# Holy Rome
-((67, 50), 	(74, 58)), 	# Russia
-((50, 29), 	(55, 32)), 	# Mali
-((63, 50), 	(67, 55)), 	# Poland
-((44, 42), 	(50, 44)), 	# Portugal
-((26, 20), 	(29, 24)), 	# Inca
-((58, 45), 	(63, 47)), 	# Italy
-((87, 46), 	(105, 54)), 	# Mongolia
-((15, 36), 	(20, 41)), 	# Aztecs
-((86, 38), 	(91, 43)), 	# Mughals
-((69, 41), 	(76, 48)), 	# Ottomans
-((100, 32), 	(103, 36)), 	# Thailand
-((61, 19), 	(65, 22)), 	# Congo
-((56, 52), 	(58, 54)), 	# Holland
-((58, 49), 	(65, 55)), 	# Germany
-((25, 43), 	(32, 50)), 	# America
-((31, 3), 	(35, 13)), 	# Argentina
-((36, 15), 	(43, 27)), 	# Brazil
-((20, 50), 	(35, 60)), 	# Canada
+((0, 0),	(0, 0)),	# Egypt
+((0, 0),	(0, 0)), 	# China
+((0, 0),	(0, 0)),	# Babylonia
+((0, 0),	(0, 0)),	# Harappa
+((0, 0),	(0, 0)),	# Greece
+((0, 0),	(0, 0)),	# India
+((0, 0),	(0, 0)),	# Carthage
+((0, 0),	(0, 0)),	# Polynesia
+((0, 0),	(0, 0)),	# Persia
+((0, 0),	(0, 0)),	# Rome
+((0, 0),	(0, 0)),	# Tamils
+((0, 0),	(0, 0)),	# Ethiopia
+((0, 0),	(0, 0)),	# Korea
+((0, 0),	(0, 0)),	# Maya
+((0, 0),	(0, 0)),	# Byzantium
+((0, 0),	(0, 0)),	# Japan
+((0, 0),	(0, 0)),	# Vikings
+((0, 0), 	(0, 0)),	# Turks
+((0, 0),	(0, 0)),	# Arabia
+((0, 0),	(0, 0)),	# Tibet
+((0, 0),	(0, 0)),	# Indonesia
+((0, 0),	(0, 0)),	# Moors
+((0, 0),	(0, 0)),	# Spain
+((0, 0),	(0, 0)),	# France
+((0, 0),	(0, 0)),	# Khmer
+((0, 0),	(0, 0)),	# England
+((0, 0),	(0, 0)),	# HolyRome
+((0, 0),	(0, 0)),	# Russia
+((0, 0),	(0, 0)),	# Mali
+((0, 0),	(0, 0)),	# Poland
+((0, 0),	(0, 0)),	# Portugal
+((0, 0),	(0, 0)),	# Inca
+((0, 0),	(0, 0)),	# Italy
+((0, 0),	(0, 0)),	# Mongolia
+((0, 0),	(0, 0)),	# Aztecs
+((0, 0),	(0, 0)),	# Mughals
+((0, 0),	(0, 0)),	# Ottomans
+((0, 0), 	(0, 0)),	# Thailand
+((0, 0),	(0, 0)),	# Congo
+((0, 0),	(0, 0)),	# Netherlands
+((0, 0),	(0, 0)),	# Germany
+((0, 0),	(0, 0)),	# America
+((0, 0),	(0, 0)),	# Argentina
+((0, 0),	(0, 0)),	# Brazil
+((0, 0),	(0, 0)),	# Canada
 )
 
 dChangedBirthArea = {
-iPersia :	((74, 37), 	(85, 44)), 	# includes Assyria and Anatolia
-iSpain : 	((49, 43), 	(55, 46)), 	# includes Catalonia
-iInca : 	((26, 19), 	(31, 24)),
-iMongolia : 	((81, 45), 	(105, 54)), 	# 6 more west, 1 more south
-iOttomans : 	((67, 41), 	(76, 48)), 	# 2 more west
-iArgentina : 	((29, 3), 	(35, 13)), 	# includes Chile
+iPersia :	((0, 0),	(0, 0)),	# includes Assyria and Anatolia
+iSpain : 	((0, 0),	(0, 0)),	# includes Catalonia
+iInca : 	((0, 0),	(0, 0)),
+iMongolia : 	((0, 0),	(0, 0)),	# 6 more west, 1 more south
+iOttomans : 	((0, 0), 	(0, 0)), 	# includes Constantinople
+iArgentina : 	((0, 0),	(0, 0)),	# includes Chile
 }
 
 dBirthAreaExceptions = {
-iChina : [(106, 47)],
-iBabylonia : [(78, 41), (78, 42)],
-iHarappa : [(85, 41), (88, 37), (88, 38)],
-iGreece : [(64, 45), (65, 45), (66, 45)],
-iPersia : [(85, 37), (85, 38), (85, 39), (72, 39), (72, 40), (72, 41), (73, 41), (74, 41), (75, 41), (76, 41), (77, 41), (78, 41), (73, 40), (74, 40), (75, 40), (76, 40), (77, 40), (78, 40), (73, 39), (74, 39), (75, 39), (76, 39), (77, 39), (78, 39), (73, 38), (74, 38), (75, 38), (76, 38), (77, 38), (72, 37), (73, 37), (74, 37), (75, 37), (76, 37), (77, 37), (78, 37)],
-iTamils : [(90, 33), (90, 34), (91, 34)],
-iTurks : [(95, 45), (96, 45), (97, 45)],
-iArabia : [(82, 34), (73, 40), (75, 40), (71, 36), (72, 37), (67, 30), (68, 30), (69, 30), (70, 30), (71, 30), (72, 30), (72, 31), (72, 32), (71, 32)],
-iTibet : [(98, 42)],
-iIndonesia : [(100, 31), (100, 30), (101, 29), (101, 30)],
-iMoors : [(58, 43), (58, 42)],
-iSpain : [(49, 41), (49, 42), (49, 43), (49, 44), (50, 43), (50, 44), (50, 42)],
-iFrance : [(55, 46), (57, 46), (56, 45), (57, 45), (58, 48), (58, 49), (58, 50), (53, 46), (52, 46), (51, 46), (57, 46), (56, 52), (57, 52)],
-iHolyRome : [(64, 51), (64, 52), (64, 53), (64, 54)],
-iRussia : [(68, 58), (69, 58), (70, 58), (65, 55), (66, 55), (66, 56)],
-iPoland : [(63, 50), (64, 50)],
-iItaly : [(63,47), (63,46)],
-iMongolia : [(99, 47), (100, 47), (101, 47), (102, 47), (103, 47), (99, 46), (100, 46), (101, 46), (102, 46), (103, 46), (104, 46), (99, 45), (100, 45), (101, 45), (102, 45), (103, 45), (104, 45), (105, 45), (106, 45)],
-iMughals : [(92, 43), (93, 42), (93, 43), (94, 42), (94, 43)],
-iOttomans : [(74, 48), (75, 48), (76, 48), (75, 47), (75, 48), (76, 41)],
-iNetherlands : [(57, 51), (58, 51)],
-iGermany : [(62, 49), (62, 50), (63, 49), (63, 50), (64, 49), (64, 50), (64, 51), (65, 49), (65, 50), (65, 51), (66, 49), (66, 50), (66, 51), (58, 52), (58, 53), (62, 51), (63, 51), (64, 53), (61, 49), (61, 50), (64, 52), (58, 54), (65, 52), (65, 53)],
-iAmerica : [(25, 48), (25, 49), (25, 50), (26, 48), (26, 49), (27, 49), (27, 50), (28, 50), (29, 50), (30, 50)],
-iArgentina : [(35, 4), (35, 12), (35, 13), (36, 12), (36, 13)],
-iBrazil : [(36, 15), (36, 16)],
-iCanada : [(20, 50), (21, 50), (22, 50), (23, 50), (24, 50), (25, 50), (29, 50), (30, 50), (31, 50), (32, 50), (20, 51), (21, 51), (22, 51), (23, 51), (24, 51), (32, 51), (35, 53), (35, 54), (34, 55), (34, 56), (33, 56), (33, 57)],
+iChina : [],
+iBabylonia : [],
+iHarappa : [],
+iGreece : [],
+iIndia : [],
+iRome : [],
+iByzantium : [],
+iTurks : [],
+iArabia : [],
+iTibet : [],
+iIndonesia : [],
+iMoors : [],
+iSpain : [],
+iFrance : [],
+iHolyRome : [],
+iRussia : [],
+iPoland : [],
+iMongolia : [],
+iMughals : [],
+iOttomans : [],
+iNetherlands : [],
+iGermany : [],
+iAmerica : [],
+iArgentina : [],
+iBrazil : [],
+iCanada : [],
 }
 
 ### Core Area ###
 
 tCoreArea = (
-((67, 32),	(69, 36)),	# Egypt
-((99, 43),	(107, 47)),	# China
-((75, 39),	(77, 42)),	# Babylonia
-((85, 37),	(88, 41)),	# Harappa
-((64, 39),	(70, 45)),	# Greece
-((90, 38),	(96, 40)),	# India
-((73, 39),	(74, 41)),	# Phoenicia
-((4, 18),	(6, 21)),	# Polynesia
-((79, 37),	(85, 44)),	# Persia
-((59, 41),	(63, 47)),	# Rome
-((90, 27),	(93, 32)),	# Tamils
-((69, 27),	(73, 30)),	# Ethiopia
-((108, 45),	(110, 48)),	# Korea
-((20, 35),	(23, 37)),	# Maya
-((64, 40),	(72, 46)),	# Byzantium
-((112, 45),	(116, 47)),	# Japan
-((58, 56),	(64, 62)),	# Vikings
-((81, 44),	(89, 51)),	# Turks
-((72, 33),	(78, 42)),	# Arabia
-((92, 42),	(98, 45)),	# Tibet
-((98, 24),	(107, 30)),	# Indonesia
-((51, 37),	(53, 42)),	# Moors
-((49, 43),	(53, 46)),	# Spain
-((51, 46),	(57, 51)),	# France
-((100, 32),	(103, 36)),	# Khmer
-((50, 53),	(54, 60)),	# England
-((58, 48),	(64, 54)),	# HolyRome
-((68, 49),	(75, 59)),	# Russia
-((50, 29), 	(55, 32)), 	# Mali
-((63, 50),	(67, 55)),	# Poland
-((44, 42),	(50, 44)),	# Portugal
-((26, 20),	(28, 22)),	# Inca
-((58, 45),	(62, 47)),	# Italy
-((95, 47),	(105, 52)),	# Mongolia
-((16, 35),	(19, 38)),	# Aztecs
-((86, 38),	(91, 43)),	# Mughals
-((69, 42),	(76, 46)),	# Ottomans
-((100, 32),	(103, 36)),	# Thailand
-((61, 19),	(65, 22)),	# Congo
-((56, 52),	(58, 54)),	# Netherlands
-((58, 49),	(65, 55)),	# Germany
-((23, 45),	(32, 50)),	# America
-((31, 6),	(35, 12)),	# Argentina
-((37, 15),	(41, 22)),	# Brazil
-((27, 50),	(35, 52)),	# Canada
+((0, 0),	(0, 0)),	# Egypt
+((0, 0),	(0, 0)),	# China
+((0, 0),	(0, 0)),	# Babylonia
+((0, 0),	(0, 0)),	# Harappa
+((0, 0),	(0, 0)),	# Greece
+((0, 0),	(0, 0)),	# India
+((0, 0),	(0, 0)),	# Phoenicia
+((0, 0),	(0, 0)),	# Polynesia
+((0, 0),	(0, 0)),	# Persia
+((0, 0),	(0, 0)),	# Rome
+((0, 0),	(0, 0)),	# Tamils
+((0, 0),	(0, 0)),	# Ethiopia
+((0, 0),	(0, 0)),	# Korea
+((0, 0),	(0, 0)),	# Maya
+((0, 0),	(0, 0)),	# Byzantium
+((0, 0),	(0, 0)),	# Japan
+((0, 0),	(0, 0)),	# Vikings
+((0, 0), 	(0, 0)),	# Turks
+((0, 0),	(0, 0)),	# Arabia
+((0, 0),	(0, 0)),	# Tibet
+((0, 0),	(0, 0)),	# Indonesia
+((0, 0),	(0, 0)),	# Moors
+((0, 0),	(0, 0)),	# Spain
+((0, 0),	(0, 0)),	# France
+((0, 0),	(0, 0)),	# Khmer
+((0, 0),	(0, 0)),	# England
+((0, 0),	(0, 0)),	# HolyRome
+((0, 0),	(0, 0)),	# Russia
+((0, 0),	(0, 0)),	# Mali
+((0, 0),	(0, 0)),	# Poland
+((0, 0),	(0, 0)),	# Portugal
+((0, 0),	(0, 0)),	# Inca
+((0, 0),	(0, 0)),	# Italy
+((0, 0),	(0, 0)),	# Mongolia
+((0, 0),	(0, 0)),	# Aztecs
+((0, 0),	(0, 0)),	# Mughals
+((0, 0),	(0, 0)),	# Turkey
+((0, 0),	(0, 0)),	# Thailand
+((0, 0),	(0, 0)),	# Congo
+((0, 0),	(0, 0)),	# Netherlands
+((0, 0),	(0, 0)),	# Germany
+((0, 0),	(0, 0)),	# America
+((0, 0),	(0, 0)),	# Argentina
+((0, 0),	(0, 0)),	# Brazil
+((0, 0),	(0, 0)),	# Canada
 )
 
 dChangedCoreArea = {
+<<<<<<< HEAD
 iChina : 	((99, 42),	(107, 47)),
 iGreece :	((65, 39), 	(69, 42)),
 iIndia : 	((88, 33),	(91, 38)),
@@ -383,178 +384,269 @@ iAztecs : [(19, 40)], # Mexico
 iMughals : [(92, 43), (93, 43), (94, 42), (94, 43)],
 iOttomans : [(67, 42), (70, 42), (71, 42), (73, 42), (74, 42), (75, 42)],
 iGermany : [(58, 52), (58, 53), (58, 54), (61, 49), (61, 50), (62, 49), (62, 50), (62, 51), (63, 49), (63, 50), (63, 51)],
+=======
+iChina :	((0, 0),	(0, 0)),
+iGreece :	((0, 0),	(0, 0)),
+iIndia :	((0, 0),	(0, 0)),
+iPhoenicia :	((0, 0),	(0, 0)),
+iMaya :		((0, 0),	(0, 0)),	# Colombia
+iByzantium :	((0, 0),	(0, 0)),
+iJapan :	((0, 0), 	(0, 0)),
+iTurks :	((0, 0), 	(0, 0)),
+iArabia :	((0, 0),	(0, 0)),
+iMoors :	((0, 0),	(0, 0)),
+iSpain :	((0, 0),	(0, 0)),
+iKhmer :	((0, 0),	(0, 0)),
+iHolyRome :	((0, 0),	(0, 0)),
+iItaly :	((0, 0),	(0, 0)),
+iMongolia :	((0, 0),	(0, 0)),
+iAztecs :	((0, 0),	(0, 0)),	# Mexico
+iMughals :	((0, 0),	(0, 0)),
+iOttomans :	((0, 0),	(0, 0)),
+iGermany :	((0, 0),	(0, 0)),
+}
+
+dCoreAreaExceptions = {
+iChina : [],
+iBabylonia : [],
+iHarappa : [],
+iGreece : [],
+iIndia : [],
+iRome : [],
+iByzantium : [],
+iTurks : [],
+iArabia : [],
+iTibet : [],
+iIndonesia : [],
+iSpain : [],
+iFrance : [],
+iHolyRome : [],
+iRussia : [],
+iPoland : [],
+iMongolia : [],
+iMughals : [],
+iOttomans : [],
+iNetherlands : [],
+iGermany : [],
+iAmerica : [],
+iArgentina : [],
+iCanada : [],
+}
+
+dChangedCoreAreaExceptions = {
+iChina : [],
+iIndia : [],
+iMaya : [], # Colombia
+iArabia : [],
+iKhmer:	[],
+iMoors : [],
+iSpain : [],
+iHolyRome : [],
+iItaly : [],
+iMongolia : [],
+iMughals : [],
+iOttomans : [],
+iGermany : [],
+>>>>>>> map
 }
 
 ### Normal Area ###
 
 tNormalArea = (
-((65, 30), 	(72, 37)), 	# Egypt
-((99, 39), 	(108, 50)), 	# China
-((74, 38), 	(79, 44)), 	# Babylonia
-((84, 35), 	(88, 42)), 	# Harappa
-((64, 39), 	(68, 44)), 	# Greece
-((89, 38), 	(96, 42)), 	# India
-((72, 39), 	(74, 41)), 	# Carthage
-((3, 15), 	(13, 21)), 	# Polynesia
-((79, 37), 	(86, 46)), 	# Persia
-((57, 40), 	(63, 47)), 	# Rome
-((90, 28), 	(93, 34)), 	# Tamils
-((68, 25), 	(77, 30)), 	# Ethiopia
-((108, 45), 	(110, 49)), 	# Korea
-((20, 32), 	(23, 37)), 	# Maya
-((64, 40), 	(72, 45)), 	# Byzantium
-((111, 41), 	(116, 52)), 	# Japan
-((58, 56), 	(67, 65)), 	# Vikings
-((79, 44),	(103, 52)),	# Turks
-((72, 30), 	(82, 38)), 	# Arabia
-((92, 41), 	(98, 45)), 	# Tibet
-((98, 24), 	(113, 31)), 	# Indonesia
-((51, 37), 	(58, 43)), 	# Moors
-((49, 40), 	(55, 46)), 	# Spain
-((51, 46), 	(58, 52)), 	# France
-((98, 26), 	(103, 37)), 	# Khmer
-((50, 53), 	(54, 60)), 	# England
-((58, 48), 	(65, 54)), 	# Holy Rome
-((68, 49), 	(83, 62)), 	# Russia
-((48, 28), 	(57, 34)), 	# Mali
-((63, 50), 	(69, 55)), 	# Poland
-((44, 41), 	(50, 44)), 	# Portugal
-((24, 14), 	(30, 29)), 	# Inca
-((57, 40), 	(63, 47)), 	# Italy
-((92, 48), 	(104, 54)), 	# Mongolia
-((15, 35), 	(20, 40)), 	# Aztecs
-((86, 37), 	(94, 43)), 	# Mughals
-((68, 42), 	(78, 49)), 	# Ottomans
-((99, 31), 	(103, 37)), 	# Thailand
-((61, 19), 	(65, 22)), 	# Congo
-((56, 51), 	(58, 54)), 	# Holland
-((59, 48), 	(66, 55)), 	# Germany
-((11, 43), 	(31, 49)), 	# America
-((31,  3), 	(36, 15)), 	# Argentina
-((32, 14), 	(43, 28)), 	# Brazil
-(( 8, 50), 	(37, 67)), 	# Canada
+((0, 0),	(0, 0)),	# Egypt
+((0, 0),	(0, 0)),	# China
+((0, 0),	(0, 0)),	# Babylonia
+((0, 0),	(0, 0)), 	# Harappa
+((0, 0),	(0, 0)),	# Greece
+((0, 0),	(0, 0)),	# India
+((0, 0),	(0, 0)),	# Carthage
+((0, 0),	(0, 0)),	# Polynesia
+((0, 0),	(0, 0)),	# Persia
+((0, 0),	(0, 0)),	# Rome
+((0, 0),	(0, 0)),	# Tamils
+((0, 0),	(0, 0)),	# Ethiopia
+((0, 0),	(0, 0)),	# Korea
+((0, 0),	(0, 0)),	# Maya
+((0, 0),	(0, 0)),	# Byzantium
+((0, 0),	(0, 0)),	# Japan
+((0, 0),	(0, 0)),	# Vikings
+((0, 0), 	(0, 0)),	# Turks
+((0, 0),	(0, 0)),	# Arabia
+((0, 0),	(0, 0)),	# Tibet
+((0, 0),	(0, 0)),	# Indonesia
+((0, 0),	(0, 0)),	# Moors
+((0, 0),	(0, 0)),	# Spain
+((0, 0),	(0, 0)),	# France
+((0, 0),	(0, 0)),	# Khmer
+((0, 0),	(0, 0)),	# England
+((0, 0),	(0, 0)),	# HolyRome
+((0, 0),	(0, 0)),	# Russia
+((0, 0),	(0, 0)),	# Mali
+((0, 0),	(0, 0)),	# Poland
+((0, 0),	(0, 0)),	# Portugal
+((0, 0),	(0, 0)),	# Inca
+((0, 0),	(0, 0)),	# Italy
+((0, 0),	(0, 0)),	# Mongolia
+((0, 0),	(0, 0)),	# Aztecs
+((0, 0),	(0, 0)),	# Mughals
+((0, 0),	(0, 0)),	# Ottomans
+((0, 0),	(0, 0)),	# Thailand
+((0, 0),	(0, 0)),	# Congo
+((0, 0),	(0, 0)),	# Netherlands
+((0, 0),	(0, 0)),	# Germany
+((0, 0),	(0, 0)),	# America
+((0, 0),	(0, 0)),	# Argentina
+((0, 0),	(0, 0)),	# Brazil
+((0, 0),	(0, 0)),	# Canada
 )
 
 dChangedNormalArea = {
-iIndia : 	((96, 42),	(97, 42)),
-iCarthage : 	((71, 39),	(74, 41)),
-iMaya : 	((24, 26),	(29, 32)), # Colombia
-iArabia : 	((73, 30),	(82, 38)),
-iHolyRome : 	((61, 46),	(66, 50)),
+iIndia : 	((0, 0),	(0, 0)),
+iCarthage :	((0, 0),	(0, 0)),
+iMaya : 	((0, 0),	(0, 0)),	# Colombia
+iArabia : 	((0, 0),	(0, 0)),
+iKhmer : 	((0, 0),	(0, 0)),
+iHolyRome : 	((0, 0),	(0, 0)),
 }
 
 dNormalAreaExceptions = {
-iEgypt : [(72, 37), (70, 30), (71, 30), (72, 30)],
-iChina : [(99, 49), (100, 49), (101, 49), (99, 50), (100, 50), (101, 50), (102, 50), (100, 39), (101, 39)],
-iHarappa : [(84, 41), (84, 42), (84, 43), (85, 41), (85, 42), (85, 43), (86, 43)],
-iIndia : [(93, 42), (94, 42), (95, 42), (96, 42)],
-iPolynesia : [(13, 21)],
-iPersia : [(86, 39), (86, 38), (86, 37)],
-iRome : [(62, 47), (63, 47), (63, 46)],
-iEthiopia : [(76, 30), (77, 30)],
-iJapan : [(111, 52), (112, 52), (111, 51)],
-iVikings : [(65, 56), (66, 56), (67, 56), (66, 57), (67, 57)],
-iTurks : [(88, 44), (93, 44), (94, 44), (95, 44), (96, 44), (97, 44), (98, 44), (95, 45), (96, 45), (97, 45), (100, 44), (101, 44), (102, 44), (103, 44), (100, 45), (101, 45), (102, 45), (103, 45), (99, 46), (101, 46), (102, 46), (103, 46), (99, 47), (100, 47), (101, 47), (102, 47), (103, 47), (99, 48), (100, 48), (101, 48), (102, 48), (103, 48), (100, 49), (101, 49), (102, 49), (103, 49)],
-iArabia : [(81, 38), (82, 38), (82, 37)],
-iSpain : [(49, 44), (49, 43), (49, 42), (49, 41)],
-iFrance : [(51, 46), (52, 46), (53, 46), (58, 47), (58, 46), (58, 51), (58, 52), (57, 52)],
-iRussia : [(80, 49), (68, 62), (68, 61), (68, 60), (68, 59)],
-iPoland : [(63, 50), (64, 50)],
-iItaly : [(62, 47), (63, 47), (63, 46)],
-iMongolia : [(92, 52), (92, 53), (92, 54), (93, 54), (94, 54), (100, 48), (101, 48), (102, 48), (103, 48), (104, 48)],
-iAztecs : [(20, 35)],
-iArgentina : [(35, 12), (35, 13), (36, 12), (36, 13), (36, 14), (36, 15)],
-iCanada : [(11,50), (12,50), (13,50), (14,50), (16,50), (17,50), (18,50), (19,50), (20,50), (21,50), (22,50), (23,50), (24,50), (25,50), (29,50), (30,50), (31,50), (32,50), (32,51), (8,59), (8,60), (8,61), (8,62), (8,63), (8,64), (8,65), (9,59), (9,60), (9,61), (9,62), (9,63), (9,64), (9,65), (37,66), (37,67)],
+iChina : [],
+iBabylonia : [],
+iHarappa : [],
+iGreece : [],
+iIndia : [],
+iPolynesia : [],
+iPersia : [],
+iRome : [],
+iEthiopia : [],
+iByzantium : [],
+iJapan : [],
+iVikings : [],
+iTurks : [],
+iArabia : [],
+iSpain : [],
+iTibet : [],
+iIndonesia : [],
+iMoors : [],
+iSpain : [],
+iFrance : [],
+iKhmer:	[],
+iHolyRome : [],
+iRussia : [],
+iPoland : [],
+iInca : [],
+iItaly : [],
+iMongolia : [],
+iMughals : [],
+iOttomans : [],
+iThailand : [],
+iNetherlands : [],
+iGermany : [],
+iAmerica : [],
+iArgentina : [],
+iBrazil : [],
+iCanada : [],
 }
 
 dChangedNormalAreaExceptions = {
-iChina : [(99, 49), (100, 49), (101, 49), (99, 50), (100, 50), (101, 50), (102, 50)],
+iMaya : [], # Colombia
+iArabia : [],
+iKhmer:	[],
+iHolyRome : [],
 }
 
 ### Broader Area ###
 
 tBroaderArea = (
-((60, 26), 	(74, 38)), 	# Egypt
-((95, 38), 	(108, 50)), 	# China
-((72, 37), 	(78, 44)), 	# Babylonia
-((90, 40), 	(90, 40)), 	# Harappa
-((62, 39), 	(77, 47)), 	# Greece
-((85, 28), 	(99, 43)), 	# India
-((71, 39), 	(74, 41)), 	# Carthage
-((1, 15), 	(17, 38)), 	# Polynesia
-((70, 37), 	(87, 49)), 	# Persia
-((49, 35), 	(73, 50)), 	# Rome
-((90, 28), 	(93, 34)), 	# Tamils
-((67, 21), 	(77, 30)), 	# Ethiopia
-((106, 45), 	(110, 52)), 	# Korea
-((19, 30), 	(26, 37)), 	# Maya
-((58, 34), 	(74, 45)), 	# Byzantium
-((110, 40), 	(116, 56)), 	# Japan
-((58, 56), 	(71, 65)), 	# Vikings
-((79, 44),	(103, 52)),	# Turks
-((64, 30), 	(85, 44)), 	# Arabia
-((92, 41), 	(98, 45)), 	# Tibet
-((98, 24), 	(113, 31)), 	# Indonesia
-((51, 37), 	(58, 43)), 	# Moors
-((49, 38), 	(55, 46)), 	# Spain
-((49, 44), 	(61, 52)), 	# France
-((97, 25), 	(105, 39)), 	# Khmer
-((48, 53), 	(54, 60)), 	# England
-((58, 43), 	(64, 54)), 	# Holy Rome
-((65, 48), 	(92, 59)), 	# Russia
-((48, 26), 	(59, 34)), 	# Mali
-((63, 50), 	(67, 55)), 	# Poland
-((49, 40), 	(51, 45)), 	# Portugal
-((24, 14), 	(30, 27)), 	# Inca
-((57, 47), 	(65, 47)), 	# Italy
-((82, 44), 	(110, 62)), 	# Mongolia
-((14, 32), 	(24, 43)), 	# Aztecs
-((86, 37), 	(94, 43)), 	# Mughals
-((68, 42), 	(86, 49)), 	# Ottomans
-((97, 25), 	(105, 39)), 	# Thailand
-((61, 19), 	(65, 22)), 	# Congo
-((56, 51), 	(58, 54)), 	# Holland
-((55, 46), 	(67, 57)), 	# Germany
-((10, 42), 	(37, 56)), 	# America
-((29,  3), 	(36, 15)), 	# Argentina
-((32, 14), 	(43, 28)), 	# Brazil
-(( 8, 50), 	(37, 67)), 	# Canada
+((0, 0),	(0, 0)),	# Egypt
+((0, 0),	(0, 0)),	# China
+((0, 0),	(0, 0)),	# Babylonia
+((0, 0),	(0, 0)),	# Harappa
+((0, 0),	(0, 0)),	# Greece
+((0, 0),	(0, 0)),	# India
+((0, 0),	(0, 0)),	# Carthage
+((0, 0),	(0, 0)),	# Polynesia
+((0, 0),	(0, 0)),	# Persia
+((0, 0),	(0, 0)),	# Rome
+((0, 0),	(0, 0)),	# Tamils
+((0, 0),	(0, 0)),	# Ethiopia
+((0, 0),	(0, 0)),	# Korea
+((0, 0),	(0, 0)),	# Maya
+((0, 0),	(0, 0)),	# Byzantium
+((0, 0),	(0, 0)),	# Japan
+((0, 0),	(0, 0)),	# Vikings
+((0, 0), 	(0, 0)),	# Turks
+((0, 0),	(0, 0)),	# Arabia
+((0, 0),	(0, 0)),	# Tibet
+((0, 0),	(0, 0)),	# Indonesia
+((0, 0),	(0, 0)),	# Moors
+((0, 0),	(0, 0)),	# Spain
+((0, 0),	(0, 0)),	# France
+((0, 0),	(0, 0)),	# Khmer
+((0, 0),	(0, 0)),	# England
+((0, 0),	(0, 0)),	# Holy Rome
+((0, 0),	(0, 0)),	# Russia
+((0, 0),	(0, 0)),	# Mali
+((0, 0),	(0, 0)),	# Poland
+((0, 0),	(0, 0)),	# Portugal
+((0, 0),	(0, 0)),	# Inca
+((0, 0),	(0, 0)),	# Italy
+((0, 0),	(0, 0)),	# Mongolia
+((0, 0),	(0, 0)),	# Aztecs
+((0, 0),	(0, 0)),	# Mughals
+((0, 0),	(0, 0)),	# Ottomans
+((0, 0),	(0, 0)),	# Thailand
+((0, 0),	(0, 0)),	# Congo
+((0, 0),	(0, 0)),	# Netherlands
+((0, 0),	(0, 0)),	# Germany
+((0, 0),	(0, 0)),	# America
+((0, 0),	(0, 0)),	# Argentina
+((0, 0),	(0, 0)),	# Brazil
+((0, 0),	(0, 0)),	# Canada
 )
 
 dChangedBroaderArea = {
-iMaya :		((33, 32),	(33, 32)),	# Colombia
-iByzantium : 	((64, 38),	(74, 45)),
-iHolyRome :	((61, 46),	(66, 50)),
-iMughals :	((84, 37),	(94, 43)),
+iCarthage :	((0, 0),	(0, 0)), 	# Carthage
+iMaya :		((0, 0),	(0, 0)),	# Colombia
+iByzantium :	((0, 0),	(0, 0)),
+iHolyRome :	((0, 0),	(0, 0)),
+iMughals :	((0, 0),	(0, 0)),
 }
 
 ### Respawn area ###
 
 dRespawnArea = {
-iEgypt :	((65, 30),	(71, 38)),
-iChina :	((99, 39),	(107, 47)),
-iIndia :	((88, 33),	(96, 41)),
-iByzantium :	((65, 40),	(69, 46)),
-iTurks :	((81, 41),	(86, 48)),
-iMoors :	((48, 34),	(58, 39)),
-iInca :		((25, 16),	(33, 25)),
-iMughals :	((85, 37),	(88, 43)),
+iEgypt :	((0, 0), 	(0, 0)),
+iChina :	((0, 0),	(0, 0)),
+iIndia :	((0, 0),	(0, 0)),
+iByzantium :	((0, 0),	(0, 0)),
+iMoors :	((0, 0),	(0, 0)),
+iInca :		((0, 0),	(0, 0)),
+iMughals :	((0, 0),	(0, 0)),
+}
+
+dRespawnAreaExceptions = {
+iIndia : [],
+iMoors : [],
+iInca : [],
 }
 
 ### Rebirth area ###
 
 dRebirthPlot = {
-iPersia : (81, 41),	# Esfahan (Iran)
-iMaya : (27, 29),	# Bogota (Colombia)
-iAztecs : (18, 37),	# Mexico City (Mexico)
+iPersia : (0, 0),	# Esfahan (Iran)
+iMaya : (0, 0),		# Bogota (Colombia)
+iAztecs : (0, 0),	# Mexico City (Mexico)
 }
 
 dRebirthArea = {
-iPersia :	((78, 38),	(86, 43)),	# Iran
-iMaya :		((23, 25), 	(31, 32)),	# Colombia
-iAztecs :	((11, 34), 	(23, 48)),	# Mexico
+iPersia :	((0, 0),	(0, 0)),	# Iran
+iMaya :		((0, 0),	(0, 0)),	# Colombia
+iAztecs :	((0, 0),	(0, 0)),	# Mexico
 }
 
 dRebirthAreaExceptions = {
-iAztecs : [(17, 48), (18, 48), (19, 48), (20, 48), (21, 48), (22, 48), (23, 48), (18, 47), (19, 47), (20, 47), (21, 47), (22, 47), (23, 47), (18, 46), (19, 46), (20, 46), (21, 46), (22, 46), (23, 46), (21, 45), (22, 45), (23, 45), (22, 44), (23, 44), (22, 43), (23, 43), (23, 42), (22, 35), (21, 34), (22, 34), (23, 34)],
+iPersia : [],
+iMaya :	  [], # Colombia
+iAztecs : [],
 }
